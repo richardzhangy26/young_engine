@@ -77,6 +77,14 @@
 
 ![](image/node.svg)
 
+# 项目运行准备
+确保go、docker、docker-compose安装
+
+执行`chmod +x ./setup.sh`
+
+`./setup.sh`确保安装已完成
+
+
 # 项目运行
 ## 启动DB
 ```shell
@@ -87,7 +95,11 @@ docker-compose up
 ```shell
 go run ./main.go
 ```
+# Postman测试
 
+下面是可掉用的接口
 
+![api.jpg](image%2Fapi.jpg)
 
-
+通过postman给Body里面增加`exp`字段来掉用post请求，结果`10+20+30>10+20`返回为true
+![postman.jpg](image%2Fpostman.jpg)
